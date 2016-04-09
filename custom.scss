@@ -17,11 +17,11 @@ header {
   }
 }
 
-nav .navbar {
+.navbar {
   margin-bottom: 0;
   border-bottom: 2px solid $gray;
-  ul>li>a {
+  ul li a {
     height: 80px;
     line-height: 60px;
-  }
+  } 
 }
