@@ -10,4 +10,11 @@ header {
     width: 100%;
     margin: 0 auto; }
 
+nav {
+  margin-bottom: 0;
+  border-bottom: 2px solid #D2D2D2; }
+  nav ul > li > a {
+    height: 80px;
+    line-height: 60px; }
+
 /*# sourceMappingURL=custom.css.map */
