@@ -1,9 +1,38 @@
+// Serif font
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700italic,400italic,700,300italic,300);
+
+// Sans Serif font
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+// SCSS variables
+// ==================
+
+// Fonts
+$serif: 'Merriweather', serif;
+$sans: 'Montserrat', sans-serif;
+$medLgFont: 18px;
+$medFont: 16px;
+
+// Colors
 $white: #FFFFFF;
 $black: #000000;
 $gray: #D2D2D2;
+$main: #3B9BEE;
+$mainDark: #368BD6;
 
 body {
   background-color: $white;
+  height: 100%;
+}
+
+a {
+  color: $black;
+  &:hover {
+    color: $main;
+  }
+  &.active {
+    color: $main;
+  }
 }
 
 header {
@@ -18,10 +47,43 @@ header {
 }
 
 .navbar {
+  font-family: $serif;
+  font-style: italic;
+  font-size: $medFont;
   margin-bottom: 0;
   border-bottom: 2px solid $gray;
   ul li a {
-    height: 80px;
-    line-height: 60px;
-  } 
+    padding: 24px 22px;
+    &.donateNow {
+      color: $white;
+      background-color: $main;
+      font-family: $sans;
+      font-style: normal;
+      font-weight: bold;
+      margin-top: 14px;
+      padding: 8px 10px;
+      border-radius: 2px;
+      text-align: center;
+      &:hover {
+        background-color: $mainDark;
+      }
+    }
+  }
+}
+
+.articlesSection {
+  .articlePreview {
+    height: 100%;
+    h3 {
+      font-family: $sans;
+      font-weight: bold;
+      font-size: $medLgFont;
+      text-transform: uppercase;
+    }
+    p {
+      font-family: $serif;
+      font-weight: normal;
+      font-size: $medFont;
+    }
+  }
 }
