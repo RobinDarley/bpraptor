@@ -10,8 +10,8 @@
 // Fonts
 $serif: 'Merriweather', serif;
 $sans: 'Montserrat', sans-serif;
-$medLgFont: 18px;
-$medFont: 16px;
+$medLgFont: 2rem;
+$medFont: 1.5rem;
 
 // Colors
 $white: #FFFFFF;
@@ -19,6 +19,9 @@ $black: #000000;
 $gray: #D2D2D2;
 $main: #3B9BEE;
 $mainDark: #368BD6;
+
+// Article spacing 
+$artPad: 3rem;
 
 body {
   background-color: $white;
@@ -72,18 +75,76 @@ header {
 }
 
 .articlesSection {
+  .col-md-6 {
+    padding: 0;
+  }
+  .articleRight {
+    position: relative;
+    &:after, &::after {
+      position: absolute;
+      top: 10.85rem;
+      left: -$artPad;
+      content: '';
+      width: 0; 
+      height: 0;
+      border-top: $artPad solid transparent;
+      border-bottom: $artPad solid transparent; 
+
+      border-right: $artPad solid $white; 
+    }
+  }
+  .articleLeft {
+    position: relative;
+    &:after, &::after {
+      position: absolute;
+      top: 10.85rem;
+      left: 100%;
+      content: '';
+      width: 0; 
+      height: 0;
+      z-index: 10;
+      border-top: $artPad solid transparent;
+      border-bottom: $artPad solid transparent; 
+
+      border-left: $artPad solid $white; 
+    }
+  }
+  .articleImg {
+    background-size: cover;
+    background-position: center center;
+    
+    height: 28rem;
+    &.one {
+      background-image: url(/img/hawk.jpg);
+    }
+    &.two {
+      background-image: url(/img/fireDept.jpg);
+    }
+  }
   .articlePreview {
-    height: 100%;
+    height: 28rem;
+    padding: 6rem 6rem;
     h3 {
       font-family: $sans;
       font-weight: bold;
       font-size: $medLgFont;
       text-transform: uppercase;
+      
+      margin: 0 0 2rem 0;
     }
     p {
       font-family: $serif;
       font-weight: normal;
       font-size: $medFont;
+      line-height: 2.5rem;
+      
+      margin: 0;
+      &.readMore {
+        margin-top: 2.5rem;
+        text-align: right;
+        font-style: italic;
+        text-decoration: underline;
+      }
     }
   }
 }
