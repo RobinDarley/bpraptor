@@ -73,9 +73,9 @@ header {
   background-position: center center;
   height: 28rem; }
   .articlesSection .articleImg.one {
-    background-image: url(/img/hawk.jpg); }
+    background-image: url(img/hawk.jpg); }
   .articlesSection .articleImg.two {
-    background-image: url(/img/fireDept.jpg); }
+    background-image: url(img/fireDept.jpg); }
 .articlesSection .articlePreview {
   height: 28rem;
   padding: 6rem 6rem; }
