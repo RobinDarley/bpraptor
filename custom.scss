@@ -228,7 +228,40 @@ header {
     font-size: $medLgFont;
     line-height: 4rem;
   }
-}  
+}
+
+.programs {
+  padding: $medLgFont;
+  margin: $regMargin;
+  p.caption {
+    text-align: center;
+    font-style: italic;
+    &::before {
+      content: "- ";
+    }
+    &::after {
+      content: " -";
+    }
+  }
+  .programOne, .programTwo, .programThree {
+    height: 24rem;
+  }
+  .programOne {
+    background: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .1)), url(img/patient43.jpg);
+    background-size: cover;
+    background-position: top center;
+  }
+  .programTwo {
+    background: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .1)), url(img/hawk.jpg);
+    background-size: cover;
+    background-position: top center;
+  }
+  .programThree {
+    background: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .1)), url(img/owl.jpg);
+    background-size: cover;
+    background-position: top center;
+  }
+}
 
 footer {
   border-top: 2px solid $gray;

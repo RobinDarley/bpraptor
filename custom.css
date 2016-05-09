@@ -144,6 +144,31 @@ header {
     font-size: 2rem;
     line-height: 4rem; }
 
+.programs {
+  padding: 2rem;
+  margin: 2rem 0; }
+  .programs p.caption {
+    text-align: center;
+    font-style: italic; }
+    .programs p.caption::before {
+      content: "- "; }
+    .programs p.caption::after {
+      content: " -"; }
+  .programs .programOne, .programs .programTwo, .programs .programThree {
+    height: 24rem; }
+  .programs .programOne {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(img/patient43.jpg);
+    background-size: cover;
+    background-position: top center; }
+  .programs .programTwo {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(img/hawk.jpg);
+    background-size: cover;
+    background-position: top center; }
+  .programs .programThree {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(img/owl.jpg);
+    background-size: cover;
+    background-position: top center; }
+
 footer {
   border-top: 2px solid #D2D2D2;
   padding: 2rem 0;
